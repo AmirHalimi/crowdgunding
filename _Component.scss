@@ -1,0 +1,38 @@
+////////////*variables
+$padding-container: 30px; 
+$borderradius-container: 10px;
+$color-caption: rgb(132, 124, 124);
+$padding-version-project: 15px;
+$fontsize-paragraph: 16px;
+
+
+////////////*mixin
+
+@mixin font-head($size , $weight ...){
+   font-size: $size;
+   font-weight: $weight;
+}
+
+////?for centering container with what width we want... 
+@mixin container($width-container , $height-container ...){
+   width: $width-container;
+   min-height: $height-container;
+   margin: auto;
+}
+
+@mixin design-container(){
+   background: white;
+   border: 1px solid rgb(245, 245, 245);
+   border-radius: $borderradius-container;
+   box-shadow: 5px 10px 20px rgb(245, 245, 245);
+   padding: $padding-container;
+}
+
+////?for create and design btn... 
+@mixin btn-desgin($bg-color , $font-color , $padding-btn ...){
+   background: $bg-color;
+   color: $font-color;
+   padding: 0px 2vw 0px $padding-btn;
+   border: none;
+   border-radius: 50px;
+}

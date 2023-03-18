@@ -1,0 +1,137 @@
+@import "_component.scss";
+
+
+//////////* start base 
+body{
+   font-family: sans-serif;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+}
+//////////* end base
+
+
+//////////* start header
+#header{
+   position: relative;
+   height: 40vh;
+   .bg-header{   //////?background for header?//////
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+   }
+}
+header .navbar{
+   @include container(80vw,0...);
+}
+//////////* end header
+
+
+//////////* start main
+#main{
+   transform: translatey(-20%); //////?for moving main on the header...
+}
+////*start mastercraft
+.mastercraft{
+   @include container(45vw,0...);
+   @include design-container();
+   text-align: center;
+} 
+.mastercraft .mastercraft-logo{
+   transform: translatey(-85%);
+}
+.mastercraft .mastercraft-caption{
+   position: relative;
+   bottom: 17px;
+   h2{
+      @include font-head(23px,1000...);
+   }
+   p{
+      font-size: $fontsize-paragraph;
+      color: $color-caption;
+   }
+}
+.mastercraft .mastercraft-btn{
+   .back-project--btn{
+      @include btn-desgin(hsl(176, 72%, 28%),white,2vw...);
+   }
+   .bookmark-btn{
+      @include btn-desgin(rgb(239, 233, 233),hsl(176, 72%, 28%),0vw...);
+   }
+}
+////*end mastercraft
+
+////*start backer
+.backer{
+   @include container(45vw,0...);
+   @include design-container();
+}
+.backer .backer-about{
+   gap: 7%;
+   padding-bottom: 3%;
+   div{
+      position: relative;
+      border-right: 1px solid rgb(171, 170, 170);
+      padding-right: 5%;
+      padding-bottom: 0px;
+      h2{
+         @include font-head(23px,1000...);
+      }
+      p{
+         font-size: $fontsize-paragraph;
+         margin-bottom: 0px;
+         color: $color-caption;
+      }
+   }
+   .dayleft{
+      border: none; //////?for deleting border-right...
+   }
+   ////////*create prograss-bar
+   // .progress{
+   //    border-radius: 50px;
+   //    .progress-bar{
+   //       background-color: hsl(176, 72%, 28%);
+   //    }
+   // }
+}
+////*end backer
+
+////*start about-project
+.about-project{
+   @include container(45vw,0vh...);
+   @include design-container();
+   .about-project--caption{
+      h2{
+         @include font-head(20px,1000...);
+      }
+      p{
+         font-size: $fontsize-paragraph;
+         color: $color-caption;
+      }
+   }
+}
+.about-project .project-version{
+   .bamboo-stand{
+      padding: $padding-version-project;
+      border: 1px solid rgb(222, 219, 219);
+      border-radius: $borderradius-container;
+      header{
+         .main-h2{
+            @include font-head(20px,1000...);
+         }
+         .second-h2{
+            @include font-head(17px,600...);
+            color: hsl(176, 72%, 28%);
+         }
+      }
+      footer{
+         button{
+            @include btn-desgin(hsl(176, 72%, 28%),white,2vw...);
+         }
+      }
+   }
+}
