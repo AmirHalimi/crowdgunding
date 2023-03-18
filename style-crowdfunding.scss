@@ -114,38 +114,44 @@ header .navbar{
       }
    }
 }
-.about-project .project-version{
-   .bamboo-stand{
-      padding: $padding-version-project;
-      border: 1px solid rgb(222, 219, 219);
-      border-radius: $borderradius-container;
-      header{
-         .main-h2{
-            @include font-head(20px,1000...);
+////*end about-project
+
+////*start project-version
+.project-version .bamboo-stand{
+   padding: $padding-version-project;
+   border: 1px solid rgb(222, 219, 219);
+   border-radius: $borderradius-container;
+   ////? header 
+   header{
+      .main-h2{
+         @include font-head(20px,1000...);
+      }
+      .second-h2{
+         @include font-head(17px,600...);
+         color: hsl(176, 50%, 47%);
+      }
+   }
+   ////? main 
+   main{
+      color: $color-caption;
+   }
+   ////? footer
+   footer{
+      .days-left{
+         transform: translatey(6px);
+         h4{
+            font-size: 27px;
+            font-weight: 700;
          }
-         .second-h2{
-            @include font-head(17px,600...);
-            color: hsl(176, 50%, 47%);
+         section{
+            color: $color-caption;
+            vertical-align: center;
          }
       }
-      main{
-         color: $color-caption;
-      }
-      footer{
-         .days-left{
-            transform: translatey(6px);
-            h4{
-               font-size: 27px;
-               font-weight: 700;
-            }
-            section{
-               color: $color-caption;
-               vertical-align: center;
-            }
-         }
-         button{
-            @include btn-desgin(hsl(176, 72%, 28%),white,2vw...);
-         }
+      button{
+         @include btn-desgin(hsl(176, 72%, 28%),white,2vw...);
       }
    }
 }
+
+////*start project-version
