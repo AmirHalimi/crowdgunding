@@ -125,10 +125,24 @@ header .navbar{
          }
          .second-h2{
             @include font-head(17px,600...);
-            color: hsl(176, 72%, 28%);
+            color: hsl(176, 50%, 47%);
          }
       }
+      main{
+         color: $color-caption;
+      }
       footer{
+         .days-left{
+            transform: translatey(6px);
+            h4{
+               font-size: 27px;
+               font-weight: 700;
+            }
+            section{
+               color: $color-caption;
+               vertical-align: center;
+            }
+         }
          button{
             @include btn-desgin(hsl(176, 72%, 28%),white,2vw...);
          }
