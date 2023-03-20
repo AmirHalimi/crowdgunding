@@ -3,7 +3,7 @@ $padding-container: 30px;
 $borderradius-container: 10px;
 $color-caption: rgb(132, 124, 124);
 $padding-version-project: 15px;
-$fontsize-paragraph: 16px;
+$fontsize-paragraph: 1.1em;
 
 
 ////////////*mixin
@@ -35,4 +35,11 @@ $fontsize-paragraph: 16px;
    padding: 0px 2vw 0px $padding-btn;
    border: none;
    border-radius: 50px;
+}
+
+////?for hover btn nad change bg-color... 
+%hover-btn{
+   &:hover{
+   background: hsl(176, 72%, 28%);
+   }
 }

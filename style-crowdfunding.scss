@@ -33,7 +33,7 @@ header .navbar{
 
 //////////* start main
 #main{
-   transform: translatey(-20%); //////?for moving main on the header...
+   transform: translatey(-5%); //////?for moving main on the header...
 }
 ////*start mastercraft
 .mastercraft{
@@ -57,7 +57,8 @@ header .navbar{
 }
 .mastercraft .mastercraft-btn{
    .back-project--btn{
-      @include btn-desgin(hsl(176, 72%, 28%),white,2vw...);
+      @include btn-desgin(hsl(176, 50%, 47%),white,2vw...);
+      @extend %hover-btn;
    }
    .bookmark-btn{
       @include btn-desgin(rgb(239, 233, 233),hsl(176, 72%, 28%),0vw...);
@@ -149,9 +150,85 @@ header .navbar{
          }
       }
       button{
-         @include btn-desgin(hsl(176, 72%, 28%),white,2vw...);
+         @include btn-desgin(hsl(176, 50%, 47%),white,2vw...);
+         @extend %hover-btn;
       }
    }
 }
 
+.project-version .black-edition-stand{
+   padding: $padding-version-project;
+   border: 1px solid rgb(222, 219, 219);
+   border-radius: $borderradius-container;
+   ////? header 
+   header{
+      .main-h2{
+         @include font-head(20px,1000...);
+      }
+      .second-h2{
+         @include font-head(17px,600...);
+         color: hsl(176, 50%, 47%);
+      }
+   }
+   ////? main 
+   main{
+      color: $color-caption;
+   }
+   ////? footer
+   footer{
+      .days-left{
+         transform: translatey(6px);
+         h4{
+            font-size: 27px;
+            font-weight: 700;
+         }
+         section{
+            color: $color-caption;
+            vertical-align: center;
+         }
+      }
+      button{
+         @include btn-desgin(hsl(176, 50%, 47%),white,2vw...);
+         @extend %hover-btn;
+      }
+   }
+}
+
+.project-version .mahogany-special-edition{
+   padding: $padding-version-project;
+   border: 1px solid rgb(222, 219, 219);
+   border-radius: $borderradius-container;
+   ////? header 
+   header{
+      .main-h2{
+         @include font-head(20px,1000...);
+      }
+      .second-h2{
+         @include font-head(17px,600...);
+         color: hsl(176, 50%, 47%);
+      }
+   }
+   ////? main 
+   main{
+      color: $color-caption;
+   }
+   ////? footer
+   footer{
+      .days-left{
+         transform: translatey(6px);
+         h4{
+            font-size: 27px;
+            font-weight: 700;
+         }
+         section{
+            color: $color-caption;
+            vertical-align: center;
+         }
+      }
+      button{
+         @include btn-desgin(hsl(176, 50%, 47%),white,2vw...);
+         @extend %hover-btn;
+      }
+   }
+}
 ////*start project-version
